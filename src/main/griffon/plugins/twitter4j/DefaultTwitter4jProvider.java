@@ -34,6 +34,8 @@ public class DefaultTwitter4jProvider extends AbstractTwitter4jProvider {
         return INSTANCE;
     }
 
+    private DefaultTwitter4jProvider() {}
+
     @Override
     protected Twitter getTwitter(Map<String, Object> params) {
         return TwitterHolder.getInstance().fetchTwitter(params);

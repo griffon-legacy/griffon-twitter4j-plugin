@@ -34,11 +34,9 @@ class TwitterHolder {
         INSTANCE
     }
 
+    private TwitterHolder() {}
+
     private final Map<String, Twitter> CLIENTS = new ConcurrentHashMap<String, Twitter>()
-
-    private TwitterHolder() {
-
-    }
 
     String[] getTwitterIds() {
         List<String> ids = []
